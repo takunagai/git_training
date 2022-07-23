@@ -1,0 +1,8 @@
+
+// ここでは、オリジナル関数をまとめて書いています。
+
+@mixin btn--style($width: rem(10), $height: rem(11)){
+  //サイト共通ボタンのスタイル
+  width:$width;
+  height:$height;
+}

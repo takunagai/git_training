@@ -1,0 +1,132 @@
+.recruit {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: rem(60);
+
+  @include mq("md") {
+    padding: 0;
+    padding-top: rem(70);
+    padding-bottom: rem(70);
+  }
+}
+
+.recruit__items {
+  // max-width: 100%;
+  //width: calc(100% + 40px);
+
+  // margin: 0 -rem(40);
+
+  @include mq("md") {
+    width: rem(1110);
+    max-width: 100%;
+    height: rem(340);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: auto;
+    // padding: rem(30) rem(90) rem(30) rem(90);
+  }
+}
+
+.recruit__images {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+  height: rem(140);
+  // height: auto;
+  // height: rem(140);
+  // background: transparent url(../images/recruit.jpg);
+  // background-size: contain;
+  // object-fit: contain;
+  // object-position: center -10px;
+  // height: inherit;
+
+  @include mq("md") {
+    width: rem(665);
+    max-width: 100%;
+    margin: 0;
+    height: rem(340);
+  }
+
+  img {
+    // display: block;
+    // width: 100%;
+    // vertical-align: top;
+    object-fit:cover;
+    // width:100%;
+    // height: 100%;
+    height: rem(140);
+
+    @include mq("md") {
+       height: 100%;
+    }
+  }
+}
+
+.recruit__list {
+  padding: rem(40) 0 rem(30) 0;
+  background-color: #f7f7f7;
+  @include mq("md") {
+    width: rem(445);
+    height: inherit;
+    position: relative;
+    text-align: center;
+    padding-top: rem(70);
+  }
+}
+
+.recruit__title {
+  padding-top: rem(20);
+  font-size: rem(30);
+  color: $title-color;
+  text-align: center;
+  height: rem(40);
+  line-height: rem(30);
+  position: relative;
+  vertical-align: top;
+  letter-spacing: rem(0.72);
+
+  @include mq("md") {
+    font-size: rem(36);
+    margin-top: rem(7);
+    padding-top: rem(0);
+  }
+
+  &::after {
+    content: "採用情報";
+    font-size: rem(13);
+    display: block;
+    width: rem(60);
+    height: rem(17);
+    position: absolute;
+    z-index: 1;
+    // bottom: rem(-20);
+    // letter-spacing: rem(1.3);
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%,-50%);
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+
+    @include mq("md") {
+    }
+  }
+}
+
+.recruit__title {
+  @include mq("md") {
+  }
+}
+
+.recruit__text {
+  width: rem(430);
+  max-width: 100%;
+  height: rem(35);
+  text-align: center;
+  margin: rem(65) auto 0;
+  font-size: rem(14);
+  @include mq("md") {
+    margin-top: rem(50);
+    font-size: rem(15);
+  }
+}

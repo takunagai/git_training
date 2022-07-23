@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- meta情報 -->
+    <!-- SEOのクロール防止 -->
+    <meta name="“robots”" content="“noindex”" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <title>codeUps課題サイトです</title>
+    <!-- ファビコン -->
+    <link rel="”icon”" href="./assets/images/favicon.ico" />
+    <!-- swiper awesomeへのリンク  cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.0/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script defer type="text/javascript" src="./assets/js/script.js"></script>
+  </head>
+  <body>
+    <!-- ヘッダー（ロゴとメインビジュアル） -->
+    <header class="header">
+      <div class="header__inner">
+        <p class="header__logo">
+          <a href="index.html"
+            ><img src="./assets/images/logo.svg" alt="自動分析機能のアイコン"
+          /></a>
+        </p>
+        <ul class="header__nav nav o-tablet">
+          <li class="nav__item"><a class="" href="news.html">NEWS</a></li>
+          <li class="nav__item"><a href="#service">SERVICE</a></li>
+          <li class="nav__item"><a href="#works">WORKS</a></li>
+          <li class="nav__item"><a href="#company">COMPANY</a></li>
+          <li class="nav__item"><a href="#recruit">RECRUIT</a></li>
+          <li class="nav__item"><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <!-- スマホのみ登場する、ドロワーメニュー（ハンバーガー的な三本ライン） -->
+
+      <div class="header-hamburger u-tablet">
+        <div class="header-hamburger__icons">
+          <div class="header-hamburger__icon1"></div>
+          <div class="header-hamburger__icon2"></div>
+          <div class="header-hamburger__icon3"></div>
+        </div>
+      </div>
+
+      <!--  header-hamburgerがクリックされた時に表示されるメニュー -->
+      <div class="hamburger">
+        <div class="hamburger__inner">
+          <div class="hamburger__items">
+            <!-- 表示時のコンテンツの中身 -->
+            <div class="hamburger__item"><a  class="hamburger__link" href="#service">SERVICE</a></div>
+            <div class="hamburger__item"><a  class="hamburger__link" href="#works">WORKS</a></div>
+            <div class="hamburger__item"><a  class="hamburger__link" href="#company">COMPANY</a></div>
+            <div class="hamburger__item"><a  class="hamburger__link" href="#recruit">RECRUIT</a></div>
+            <div class="hamburger__item"><a  class="hamburger__link" href="#contact">CONTACT</a></div>
+            <div class="hamburger__item"><a  class="hamburger__link" href="news.html">NEWS</a></div>
+          </div>
+        </div>
+      </div>
+      <!-- ドロワー用のヒーロー -->
+      <div class="hamburger__hero"></div>
+    </header>
+    <!-- ヘッダー（ロゴとメインビジュアル）終わり -->
+
+    <div class="mainvisual">
+      <div class="mainvisual__content">
+        <h1 class="mainvisual__title">
+          WEB<br class="u-tablet" />
+          DESIGN <br class="u-tablet" />SPECIALIST
+        </h1>
+        <!-- /.mainvisual__title -->
+        <div class="mainvisual__lead">
+          お客様の夢を叶える<br class="u-tablet" />
+          <span>Webサイトを制作</span>
+        </div>
+        <!-- /.mainvisual__lead -->
+        <div class="mainvisual__button">
+          <a class="mainvisual__button--style" href="">CONTACT</a>
+        </div>
+        <!-- /.mainvisual__button -->
+      </div>
+      <!-- /.mainvisual__content -->
+
+      <div class="mainvisual__scroll">SCROLL</div>
+    </div>
+    <!-- /.mainvisual -->
+
+    <!-- 最新情報 -->
+    <section id="news" class="section news">
+      <div class="container news-container">
+        <h2 class="news__title typo-bold">NEWS</h2>
+
+        <div class="news-list">
+          <div class="news-list__item sub-news">
+            <time class="sub-news__time" datetime="2030-02-01">2030.02.01</time>
+            <a href="" class="sub-news__label">ラベル１</a>
+            <p class="sub-news__title">
+              <a href=""
+                >Webデザインニュースサイト「ウェブマガジン」に取材いただきました</a
+              >
+            </p>
+          </div>
+
+          <div class="news-list__item sub-news">
+            <time class="sub-news__time" datetime="2030-01-25">2030.01.25</time>
+            <a href="" class="sub-news__label">ラベル１</a>
+            <p class="sub-news__title">
+              <a href="">Smoothiesta様のWebサイトを制作いたしました</a>
+            </p>
+          </div>
+
+          <div class="news-list__item sub-news">
+            <time class="sub-news__time" datetime="2030-01-20">2030.01.20</time>
+            <a href="" class="sub-news__label">ラベル１</a>
+            <p class="sub-news__title">
+              <a href="">Webデザイナーを１名募集中です！</a>
+            </p>
+          </div>
+        </div>
+        <!--  news-list終わり -->
+      </div>
+      <!--  news-container終わり -->
+    </section>
+    <!--  news終わり -->
+
+    <!-- SERVICE -->
+    <section id="service" class="section service">
+      <div class="inner service__inner">
+        <h2 class="section__title typo-bold service__title">
+          <span>SERVICE</span>
+        </h2>
+        <div class="service__items">
+          <!-- 理想はcard__itemsに対し、card__itemとその配下にaタグを配置する。 -->
+          <div class="card card__first">
+            <img
+              src="./assets/images/service01.jpg"
+              alt="自動分析機能のアイコン"
+            />
+            <p class="card__title">Ｗebサイト制作</p>
+            <p class="card__text">
+              新規サイトの制作はもちろんサイトリニューアルやランディングページの制作も可能です。
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="./assets/images/service02.jpg"
+              alt="自動分析機能のアイコン"
+            />
+            <p class="card__title">Webサイト運用</p>
+            <p class="card__text">
+              サイトの更新作業や独自のアクセス解析に基づいたサイト改善のご提案をいたします。
+            </p>
+          </div>
+          <div class="card card__third">
+            <img
+              src="./assets/images/service03.jpg"
+              alt="自動分析機能のアイコン"
+            />
+            <p class="card__title">アプリ開発</p>
+            <p class="card__text">
+              スマートフォンアプリ開発の他、Vue.jsやReactによるWebアプリの開発が可能です。
+            </p>
+          </div>
+        </div>
+        <!-- リンク用ボタン -->
+        <p class="another-page-link o-tablet sevice-link__button">
+          <a href="#" class="typo-bold">MORE</a>
+        </p>
+      </div>
+      <!-- service__inner終わり -->
+    </section>
+    <!-- SERVICE終わり -->
+
+    <section id="works" class="works">
+      <div class="inner works__inner">
+        <div class="works__itmes">
+          <div class="works__item">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-card">
+                  <a  class="swiper-card__link"
+                    href="http://portforlio.tktoplog.com/"
+                    ><img class="swiper-card__image"
+                      src="./assets/images/smoothiesta@2x.jpg"
+                      alt="自動分析機能のアイコン"
+                    /></a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                  <a class="swiper-card__link"
+                   href="http://portforlio.tktoplog.com/"
+                    > <img class="swiper-card__image"
+                    src="./assets/images/works2.jpg"
+                    alt="自動分析機能のアイコン"
+                  /></a>
+                </div>
+                <div class="swiper-slide swiper-card">
+                  <a  class="swiper-card__link"
+                    href="http://portforlio.tktoplog.com/"
+                    > <img  class="swiper-card__image"
+                    src="./assets/images/works3.jpg"
+                    alt="自動分析機能のアイコン"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <!-- swiper-container終わり -->
+
+          </div>
+
+          <div class="works__list">
+            <h2 class="section__title typo-bold works__title">
+              <span>WORKS</span>
+            </h2>
+            <p class="works__text">
+              様々なジャンルのWebサイト制作が可能です。<br />
+              ご購入やお申込み数の増加などを実現します！
+            </p>
+            <!-- リンク用ボタン -->
+            <p class="another-page-link works__link">
+              <a href="#" class="typo-bold">MORE</a>
+            </p>
+          </div>
+        </div>
+        <!-- works__items終わり -->
+      </div>
+      <!-- inner終わり -->
+    </section>
+    <!-- works終わり -->
+
+    <section id="company" class="company">
+      <div class="inner company__inner">
+        <div class="company-background--images1"></div>
+        <div class="company-background--images2"></div>
+        <!-- <div class=".company-background">
+        <div class="company-background--images1"></div>
+        <div class="company-background--images2"></div>
+      </div> -->
+        <h2 class="section__title typo-bold company__title">
+          <span>COMPANY</span>
+        </h2>
+        <div class="company__subtitle">
+          <span class="message--underline"
+            >サイトのゴール ＝<br class="u-tablet" />
+            夢を叶えること
+          </span>
+        </div>
+        <div class="company__text">
+          お客様の夢を叶えること。<br />
+          それがWebサイトのゴールであり、<br
+            class="u-tablet"
+          />私たちが目指すことです。<br />
+          だからこそちゃんと成果を出すサイトを<br
+            class="u-tablet"
+          />全力でお作りします。<br />
+          お客様の笑顔を見たい。<br />
+          夢を実現する手助けをさせてください。
+        </div>
+        <!-- リンク用ボタン -->
+        <p class="another-page-link"><a href="#" class="typo-bold">MORE</a></p>
+      </div>
+      <!-- company__inner終わり -->
+    </section>
+    <!-- company終わり -->
+
+    <section id="recruit" class="recruit">
+      <div class="recruit__items">
+        <div class="recruit__images">
+          <img src="./assets/images/recruit.jpg" alt="自動分析機能のアイコン" />
+        </div>
+        <div class="recruit__list">
+          <h2 class="section__title typo-bold recruit__title">
+            <span>RECRUIT</span>
+          </h2>
+          <p class="recruit__text">私たちと一緒に働きませんか？</p>
+          <!-- リンク用ボタン -->
+          <p class="another-page-link">
+            <a href="#" class="typo-bold">MORE</a>
+          </p>
+        </div>
+      </div>
+      <!-- recruit__items 終わり -->
+    </section>
+    <!-- recruit 終わり -->
+
+    <section id="contact" class="contact">
+      <div class="contact__items">
+        <div class="contact__list">
+          <h2 class="section__title typo-bold contact__title">
+            <span>CONTACT</span>
+          </h2>
+          <p class="contact__text">
+            Webサイトの制作のご依頼やお見積りなど、<br
+              class="u-tablet"
+            />お気軽にご相談ください。
+          </p>
+          <!-- リンク用ボタン -->
+          <p class="another-page-link">
+            <a href="#" class="typo-bold">MORE</a>
+          </p>
+        </div>
+      </div>
+      <!-- contact__items 終わり -->
+    </section>
+    <!-- contact 終わり -->
+
+    <!-- トップへ戻るのリンクボタン  -->
+    <div class="footer__totop">
+      <a href="#"> <i class="fas fa-arrow-up" aria-hidden="true"></i> </a>
+    </div>
+
+    <!-- フッダーー（ロゴとメインビジュアル）-->
+    <footer class="footer">
+      <div class="footer__inner">
+        <ul class="footer__nav nav">
+          <!-- <li class="footer__nav__item"><a class="" href="#">HOME</a></li> -->
+          <li class="footer__nav__item u-tablet">
+            <a class="" href="#">HOME</a>
+          </li>
+          <li class="footer__nav__item">
+            <a class="" href="news.html">NEWS</a>
+          </li>
+          <li class="footer__nav__item"><a href="#service">SERVICE</a></li>
+          <li class="footer__nav__item"><a href="#works">WORKS</a></li>
+          <li class="footer__nav__item"><a href="#company">COMPANY</a></li>
+          <li class="footer__nav__item"><a href="#recruit">RECRUIT</a></li>
+          <li class="footer__nav__item"><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <p class="footer__copyright">© PON DESIGN</p>
+    </footer>
+
+    <!--フッダー（ロゴとメインビジュアル）終わり -->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.0/swiper-bundle.min.js"></script>
+
+    <!-- スライダープラグインのswiperへのリンク -->
+    <script
+      src="https://kit.fontawesome.com/d9525ce099.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--font awesomeへのリンク -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.min.js"></script>
+  </body>
+</html>

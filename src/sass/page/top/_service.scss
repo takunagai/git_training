@@ -1,0 +1,139 @@
+.service {
+  padding-top: 0;
+
+  @include mq("md") {
+    padding-top: rem(65);
+  }
+}
+
+.service__title {
+  font-size: rem(30);
+  color: $title-color;
+  text-align: center;
+  // height: rem(40);
+  line-height: rem(30);
+  position: relative;
+  vertical-align: top;
+  letter-spacing: rem(1.5);
+  // padding-bottom: rem(30);
+  padding-left: rem(12);
+
+  @include mq("md") {
+    font-size: rem(36);
+  }
+
+  &::after {
+    content: "事業内容";
+    font-size: rem(13);
+    display: block;
+    width: rem(80);
+    height: rem(17);
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: rem(-15);
+    letter-spacing: rem(1.3);
+    left: 50%;
+    transform: translate(-50%);
+    padding-left: rem(12);
+    @include mq("md") {
+    }
+  }
+}
+
+.service__inner {
+  @include mq("md") {
+    // width: $inner;
+    max-width: $inner;
+    padding: 0 rem(15);
+    margin: auto;
+  }
+}
+
+.service__items {
+  width: 100%;
+
+  @include mq("md") {
+    margin-top: rem(50);
+    display: flex;
+    flex-wrap: wrap;
+    //  overflow: hidden;
+  }
+  // justify-content: space-between;
+}
+
+.card {
+  // max-width: 100%;
+  // height: auto;
+  // padding: rem(10) 0;
+
+  @include mq("md") {
+    width: calc(33.3% - 30px * 2 / 3);
+    margin-right: rem(30);
+    padding: 0;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}
+.card__first {
+  padding-bottom: rem(25);
+
+  @include mq("md") {
+    padding-bottom: 0;
+  }
+
+  img {
+    &:nth-child(1) {
+      margin-top: rem(50);
+      @include mq("md") {
+        margin-top: 0;
+      }
+    }
+
+    @include mq("md") {
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.card__third {
+
+  img {
+    
+      margin-top: rem(30);
+
+      @include mq("md") {
+        margin-top: rem(0);
+      
+    }
+  }
+}
+
+.card__title {
+  margin-top: rem(22);
+  margin-bottom: rem(17);
+  text-align: center;
+  font-size: rem(18);
+  font-weight: 600;
+  // letter-spacing: rem(0.2);
+  line-height: 1.2;
+}
+@include mq("md") {
+}
+
+.card__text {
+  font-size: rem(14);
+  // height: rem(43);
+  @include mq("md") {
+    font-size: rem(15);
+    // height: 100%;
+  }
+}
+
+.sevice-link__button {
+  margin-top: rem(25);
+}

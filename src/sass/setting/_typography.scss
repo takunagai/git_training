@@ -1,0 +1,13 @@
+/* FontFamily */
+$base-font-family: "Montserrat",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+$second-font-family: "Montserrat";
+$third-font-family:"Hiragino Sans";
+
+body {
+  font-family: $base-font-family;
+}
+  
+/* font-weight */
+$regular: 300;
+$normal: 400;
+$bold: 700;

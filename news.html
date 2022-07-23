@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- meta情報 -->
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <title>codeUps課題サイトです</title>
+    <!-- ファビコン -->
+    <link rel="”icon”" href="./assets/images/favicon.ico" />
+    <!-- swiper awesomeへのリンク  cdn-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script defer type="text/javascript" src="./assets/js/script.js"></script>
+  </head>
+  <body>
+    <!-- ヘッダー（ロゴとメインビジュアル） -->
+    <header class="header">
+      <div class="header__inner">
+        <p class="header__logo">
+          <a href="index.html"
+            ><img src="./assets/images/logo.svg" alt="自動分析機能のアイコン"
+          /></a>
+        </p>
+        <ul class="header__nav nav o-tablet">
+          <li class="nav__item"><a class="" href="news.html">NEWS</a></li>
+          <li class="nav__item"><a href="#">SERVICE</a></li>
+          <li class="nav__item"><a href="#">WORKS</a></li>
+          <li class="nav__item"><a href="#">COMPANY</a></li>
+          <li class="nav__item"><a href="#">RECRUIT</a></li>
+          <li class="nav__item"><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <!-- スマホのみ登場する、ドロワーメニュー（ハンバーガー的な三本ライン） -->
+
+      <div class="header-hamburger u-tablet">
+        <div class="header-hamburger__icons">
+          <div class="header-hamburger__icon1"></div>
+          <div class="header-hamburger__icon2"></div>
+          <div class="header-hamburger__icon3"></div>
+        </div>
+      </div>
+
+      <!--  header-hamburgerがクリックされた時に表示されるメニュー -->
+      <div class="hamburger">
+        <div class="hamburger__inner">
+          <div class="hamburger__items">
+            <!-- 表示時のコンテンツの中身 -->
+            <div class="hamburger__item"><a href="news.html">NEWS</a></div>
+            <div class="hamburger__item"><a href="index.html">SERVICE</a></div>
+            <div class="hamburger__item"><a href="index.html">WORKS</a></div>
+            <div class="hamburger__item"><a href="index.html">COMPANY</a></div>
+            <div class="hamburger__item"><a href="index.html">RECRUIT</a></div>
+            <div class="hamburger__item"><a href="index.html">CONTACT</a></div>
+          </div>
+        </div>
+      </div>
+      <!-- ドロワー用のヒーロー -->
+      <!-- <div class="hamburger__hero"></div> -->
+    </header>
+    <!-- ヘッダー（ロゴとメインビジュアル）終わり -->
+
+    <div class="news-mainvisual">
+      <div class="news-mainvisual__content">
+        <h1 class="news-mainvisual__title typo-bold">NEWS</h1>
+      </div>
+      <!-- /.mainvisual__content -->
+    </div>
+    <!-- /.mainvisual -->
+
+    <!-- パンくずリスト  ulで作成し、インラインで横並びとする。-->
+    <div class="breadcrumb">
+      <ul class="breadcrumb__list breadcrumb-item">
+        <li><a class="breadcrumb-item__first" href="index.html">HOME </a></li>
+        <li><a class="breadcrumb-item__second" href="news.html"> NEWS</a></li>
+      </ul>
+    </div>
+
+    <!-- 最新情報 -->
+    <section id="news" class="section news newspage">
+      <div class="container news-container">
+        <div id="news-list" class="news-list newspage-list">
+          <div class="news-list__item sub-news news-page-list">
+            <time class="sub-news__time" datetime="2030-02-01">2030.02.01</time>
+            <a href="" class="sub-news__label">お知らせ</a>
+            <p class="sub-news__title">
+              <a href="#"
+                >Webデザインニュースサイト「ウェブマガジン」に取材いただきました</a
+              >
+            </p>
+          </div>
+
+          <div class="news-list__item sub-news news-page-list">
+            <time class="sub-news__time" datetime="2030-01-25">2030.01.25</time>
+            <a href="" class="sub-news__label">制作実績</a>
+            <p class="sub-news__title">
+              <a href="#">Smoothiesta様のWebサイトを制作いたしました</a>
+            </p>
+          </div>
+
+          <div class="news-list__item sub-news news-page-list">
+            <time class="sub-news__time" datetime="2030-01-20">2030.01.20</time>
+            <a href="" class="sub-news__label">採用</a>
+            <p class="sub-news__title">
+              <a href="#">Webデザイナーを１名募集中です！</a>
+            </p>
+          </div>
+          <div class="news-list__item sub-news news-page-list">
+            <time class="sub-news__time" datetime="2030-02-01">2030.02.01</time>
+            <a href="" class="sub-news__label">採用</a>
+            <p class="sub-news__title">
+              <a href="#">
+                （２行のテキストの場合）テキストが入るテキストが入るテキストが入るテキストが入るテキストが入るテキストが入るテキストが入るテキストが入るテキストが入るテキストが入る
+                </a>
+            </p>
+          </div>
+          <div class="news-list__item sub-news news-page-list">
+            <time class="sub-news__time" datetime="2030-02-01">2030.02.01</time>
+            <div class="sub-news__label">お知らせ</div>
+            <p class="sub-news__title">
+              <a href="#"
+                >テキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                </a>
+            </p>
+          </div>
+          <div class="news-list__item sub-news news-page-list">
+            <time class="sub-news__time" datetime="2030-02-01">2030.02.01</time>
+            <a href="" class="sub-news__label">お知らせ</a>
+            <p class="sub-news__title">
+              <a href="#"
+                >テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a
+              >
+            </p>
+          </div>
+          <div class="news-list__item sub-news news-page-list">
+            <time class="sub-news__time" datetime="2030-02-01">2030.02.01</time>
+            <a href="" class="sub-news__label">お知らせ</a>
+            <p class="sub-news__title">
+              <a href="#"
+                >テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a
+              >
+            </p>
+          </div>
+          <div class="news-list__item sub-news news-page-list">
+            <time class="sub-news__time" datetime="2030-02-01">2030.02.01</time>
+            <a href="" class="sub-news__label">お知らせ</a>
+            <p class="sub-news__title">
+              <a href="#"
+                >テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a
+              >
+            </p>
+          </div>
+          <div class="news-list__item sub-news news-page-list">
+            <time class="sub-news__time" datetime="2030-02-01">2030.02.01</time>
+            <a href="" class="sub-news__label">お知らせ</a>
+            <p class="sub-news__title">
+              <a href="#"
+                >テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a
+              >
+            </p>
+          </div>
+          <div class="news-list__item sub-news news-page-list">
+            <time class="sub-news__time" datetime="2030-02-01">2030.02.01</time>
+            <a href="" class="sub-news__label">お知らせ</a>
+            <p class="sub-news__title">
+              <a href="#"
+                >テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a
+              >
+            </p>
+          </div>
+          <div class="news-list__item sub-news news-page-list">
+            <time class="sub-news__time" datetime="2030-02-01">2030.02.01</time>
+            <a href="" class="sub-news__label">お知らせ</a>
+            <p class="sub-news__title">
+              <a href="#"
+                >テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a
+              >
+            </p>
+          </div>
+          <div class="news-list__item sub-news news-page-list">
+            <time class="sub-news__time" datetime="2030-02-01">2030.02.01</time>
+            <a href="" class="sub-news__label">お知らせ</a>
+            <p class="sub-news__title">
+              <a href="#"
+                >テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a
+              >
+            </p>
+          </div>
+          <div class="news-list__item sub-news news-page-list">
+            <time class="sub-news__time" datetime="2030-02-01">2030.02.01</time>
+            <a href="" class="sub-news__label">お知らせ</a>
+            <p class="sub-news__title">
+              <a href="#"
+                >テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a
+              >
+            </p>
+          </div>
+          <div class="news-list__item sub-news news-page-list">
+            <time class="sub-news__time" datetime="2030-02-01">2030.02.01</time>
+            <a href="" class="sub-news__label">お知らせ</a>
+            <p class="sub-news__title">
+              <a href="#"
+                >テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a
+              >
+            </p>
+          </div>
+          <div class="news-list__item sub-news news-page-list">
+            <time class="sub-news__time" datetime="2030-02-01">2030.02.01</time>
+            <a href="" class="sub-news__label">お知らせ</a>
+            <p class="sub-news__title">
+              <a href="#"
+                >テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a
+              >
+            </p>
+          </div>
+          <div class="news-list__item sub-news news-page-list">
+            <time class="sub-news__time" datetime="2030-02-01">2030.02.01</time>
+            <a href="" class="sub-news__label">お知らせ</a>
+            <p class="sub-news__title">
+              <a href="#"
+                >テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a
+              >
+            </p>
+          </div>
+          <div class="news-list__item sub-news news-page-list">
+            <time class="sub-news__time" datetime="2030-02-01">2030.02.01</time>
+            <a href="" class="sub-news__label">お知らせ</a>
+            <p class="sub-news__title">
+              <a href="#"
+                >テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a
+              >
+            </p>
+          </div>
+          <div class="news-list__item sub-news news-page-list">
+            <time class="sub-news__time" datetime="2030-02-01">2030.02.01</time>
+            <a href="" class="sub-news__label">お知らせ</a>
+            <p class="sub-news__title">
+              <a href="#"
+                >テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a
+              >
+            </p>
+          </div>
+          <div class="news-list__item sub-news news-page-list">
+            <time class="sub-news__time" datetime="2030-02-01">2030.02.01</time>
+            <a href="" class="sub-news__label">お知らせ</a>
+            <p class="sub-news__title">
+              <a href="#"
+                >テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a
+              >
+            </p>
+          </div>
+          <div class="news-list__item sub-news news-page-list">
+            <time class="sub-news__time" datetime="2030-02-01">2030.02.01</time>
+            <a href="" class="sub-news__label">お知らせ</a>
+            <p class="sub-news__title">
+              <a href="#"
+                >テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a
+              >
+            </p>
+          </div>
+
+          <div class="wp-pagenavi">
+            <a href="#" class="page smaller">
+            <span class="current">1</span>
+            </a>
+            <a href="#" class="page larger">2</a>
+            <a href="#" class="page larger">3</a>
+          </div>
+        </div>
+        <!--  news-list終わり -->
+      </div>
+      <!--  news-container終わり -->
+    </section>
+    <!--  news終わり -->
+
+    <!-- SERVICE -->
+
+    <section id="news-contact" class="contact">
+      <div class="contact__items">
+        <div class="contact__list">
+          <h2 class="section__title typo-bold contact__title">
+            <span>CONTACT</span>
+          </h2>
+          <p class="contact__text">
+            Webサイトの制作のご依頼やお見積りなど、<br
+              class="u-tablet"
+            />お気軽にご相談ください。
+          </p>
+          <!-- リンク用ボタン -->
+          <p class="another-page-link">
+            <a href="#" class="typo-bold">MORE</a>
+          </p>
+        </div>
+      </div>
+      <!-- contact__items 終わり -->
+    </section>
+    <!-- contact 終わり -->
+
+    <!-- トップへ戻るのリンクボタン  -->
+    <div class="footer__totop">
+      <a href="#"> <i class="fas fa-arrow-up" aria-hidden="true"></i> </a>
+    </div>
+
+    <!-- フッダーー（ロゴとメインビジュアル）-->
+    <footer class="footer news-footer">
+      <div class="footer__inner">
+        <ul class="footer__nav nav">
+          <!-- <li class="footer__nav__item"><a class="" href="#">HOME</a></li> -->
+          <li class="footer__nav__item"><a class="" href="#news">NEWS</a></li>
+          <li class="footer__nav__item"><a href="#service">SERVICE</a></li>
+          <li class="footer__nav__item"><a href="#works">WORKS</a></li>
+          <li class="footer__nav__item"><a href="#company">COMPANY</a></li>
+          <li class="footer__nav__item"><a href="#recruit">RECRUIT</a></li>
+          <li class="footer__nav__item"><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <p class="footer__copyright">© PON DESIGN</p>
+    </footer>
+
+    <!--フッダー（ロゴとメインビジュアル）終わり -->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- スライダープラグインのswiperへのリンク -->
+    <script
+      src="https://kit.fontawesome.com/d9525ce099.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--font awesomeへのリンク -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.min.js"></script>
+  </body>
+</html>

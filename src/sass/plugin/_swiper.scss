@@ -1,0 +1,143 @@
+
+.swiper-container {
+  padding-bottom: rem(30);
+
+  @include mq("md") {
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: rem(0);
+  }
+}
+
+.swiper-wrapper {
+  @include mq("md") {
+
+    margin-left: 0;
+  }
+}
+.swiper-slide {
+  padding: 0 $padding-sp;
+  @include mq("md") {
+    // width: rem(750);
+    // width: 59.52%;
+    // height: rem(510);
+    padding: 0;
+    outline: none;
+  }
+
+ 
+}
+.swiper-card__link{
+  // width: 100%;
+  // padding-top: 510/751*100;
+  // position: relative;
+
+  img {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
+    // height: 100%;
+    object-fit:cover;
+  
+    @include mq("md") {
+      // width: rem(749);
+      // width: 59.52%;
+      // height: rem(510);
+      // height: auto;
+      outline: none;
+    }
+  }
+
+}
+
+
+img {
+  object-fit:cover;
+
+  @include mq("md") {
+    // width: rem(749);
+    // width: 59.52%;
+    // height: rem(510);
+    // height: auto;
+    outline: none;
+  }
+}
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  z-index: 20;
+  right: rem(20);
+  text-align: right;
+  bottom: rem(0);
+  padding: 0 $padding-sp;
+  // height: rem(30);
+
+  @include mq("md") {
+    padding: 0;
+    padding-bottom: rem(5);
+    // bottom: rem(-10);
+
+    // padding-right: rem(40);
+  }
+}
+
+.swiper-container-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: #391e88;
+  outline: none;
+}
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0.35;
+
+  pointer-events: none;
+
+  @include mq("md") {
+  }
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  outline: none;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  outline: none;
+}
+
+.swiper-button-prev::before {
+  // position: absolute;
+  content: "\f104";
+  font-family: FontAwesome;
+  // background: rgba(255,255,255,0.5);
+  // padding: 8px 12px;
+  width: rem(16);
+  height: rem(32);
+  font-size: 2rem;
+  color: #391e88;
+  opacity: 1;
+  padding-left: rem(20);
+  outline: none;
+  @include mq("md") {
+    // border: 1px solid #111;
+  }
+}
+.swiper-button-next::before {
+  // position: absolute;
+  content: "\f105";
+  font-family: FontAwesome;
+  // background: rgba(255,255,255,0.5);
+  // padding: 8px 12px;
+  width: rem(16);
+  height: rem(32);
+  font-size: 2rem;
+  color: #391e88;
+  opacity: 1;
+  padding-right: rem(30);
+  outline: none;
+  @include mq("md") {
+    // border: 1px solid #111;
+  }
+}

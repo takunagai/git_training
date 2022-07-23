@@ -1,0 +1,291 @@
+.header {
+  position: fixed;
+  z-index: $layer-header;
+  width: 100%;
+  max-width: 100%;
+  height: rem(54);
+  color: #fff;
+  padding:  rem(10) rem(15) 0;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  &.h-active {
+    background-color: #21054d;
+  }
+  
+  @include mq("md") {
+    padding: 0;
+    padding:0 rem(30);
+    width: 100%;
+    max-width: 100%;
+    height: rem(65);;
+
+    &.h-active {
+      padding:  rem(23) rem(30);
+      background-color: #21054d;
+    }
+
+  }
+}
+
+.header__inner {
+  width: 100%;
+
+  @include mq("md") {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    transition: all 0.3s;
+    padding-top: rem(0);
+  }
+}
+
+.header__logo {
+  width: rem(124);
+  height: rem(22);
+
+
+  @include mq("md") {
+    width: rem(160.92);
+    height: rem(17.38);
+    padding: 0;
+  }
+}
+
+.header__nav {
+
+  @include mq("md") {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    // height:inherit;
+
+  }
+}
+
+.nav__item {
+
+  @include mq("md") {
+    margin-right: rem(25);
+    font-size: rem(15);
+    font-weight: bold;
+    letter-spacing: rem(0.9);
+    height:inherit;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      display: inline-block;
+      position: relative;
+      height: inherit;
+
+
+      &::after {
+        display: block;
+        position: absolute;
+        content: " ";
+        bottom: -8px;
+        width: 0%;
+        background-color: #f0f0f0;
+        height: 1px;
+        opacity: 0;
+        transition: 0.3s;
+      }
+
+      // &:hover,
+      &:hover {
+        &::after {
+          width: 100%;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+//以下、ドロワーメニュー用の設定領域
+.header-hamburger {
+  // position: fixed;
+  // top: rem(20);
+  right: rem(20);
+  width: rem(34);
+  z-index: 300;
+  margin-bottom: rem(10);
+
+  // transition: transform 0.3s;
+
+  &.is-active {
+    // transform: translateX(-200px);
+
+    //  下の行にicon1-3の設定があるが、詳細度の関係でこちらの設定が優先される。
+    .header-hamburger__icon1 {
+      // background: transparent url('../../images/hamburger.svg') 0% 0% no-repeat padding-box;
+      transform: rotate(-45deg);
+      // transition:transform .3s;
+      top: rem(12);
+    }
+
+    .header-hamburger__icon2 {
+      // transition:transform .3s;
+      display: none;
+    }
+    .header-hamburger__icon3 {
+      transform: rotate(45deg);
+      // transition:transform .3s;
+      top: rem(12);
+    }
+  }
+
+  .header-hamburger__icons {
+    display: block;
+    width: rem(34);
+    height: rem(16);
+    position: relative;
+  }
+
+  .header-hamburger__icon1,
+  .header-hamburger__icon2,
+  .header-hamburger__icon3 {
+    position: absolute;
+    width: 100%;
+    height: rem(3);
+    background-color: white;
+    top: 0px;
+    left: 0px;
+    transition: transform 0.3s;
+  }
+
+  .header-hamburger__icon1 {
+    // background: transparent url('../../images/hamburger.svg') 0% 0% no-repeat padding-box;
+  }
+
+  .header-hamburger__icon2 {
+    top: rem(8);
+  }
+  .header-hamburger__icon3 {
+    top: rem(16);
+  }
+}
+
+// .header-hamburger.is-active {
+//   // display: none;
+//   top: 0%;
+//   left: 0%;
+//   background-color: black;
+//   width: 100vw;
+//   height: 100vh;
+//   position: fixed;
+
+//   z-index: 20;
+//   opacity: 0.7;
+// }
+
+.hamburger {
+  background-image: linear-gradient(135deg, #7633a4, #250d65);
+  display: none;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 98;
+  transition: ease .5s;
+
+  &.is-active{
+    display: block;
+}
+}
+.hamburger__inner {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+
+
+}
+.hamburger__items {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.hamburger__item {
+  margin: 0 0 rem(20) ;
+  text-align: center;
+  height: rem(19);
+  letter-spacing: rem(0.75);
+
+  &:first-child{
+   margin-top: rem(10); 
+  }
+}
+.hamburger__item a {
+  color: #fff;
+  font-size: rem(15);
+  line-height: rem(15);
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.hamburger__item a:hover {
+  color: black;
+}
+
+//   // display: none;
+//   // background-color: white;
+//   position: fixed;
+//   padding: 0%;
+//   width: 100vw;
+//   height: 100vh;
+//   max-height: 100vh;
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   z-index: 100;
+//   transform: translateX(105%);
+//   transition: 0.5s ease 0s;
+//   background-image: linear-gradient(
+//     135deg
+//     , #7633a4, #250d65);
+
+// }
+
+// .hamburger__items.is-active {
+//   transform: translateX(0%);
+// }
+
+// .hamburger__item {
+//   height: 56px;
+//   padding: 20px;
+//   border-bottom: 1px dotted #707070;
+
+//   a {
+//     display: block;
+//     color: #707070;
+//     position: relative;
+
+//     &::after {
+//       content: "";
+//       position: absolute;
+//       background: transparent url(../../images/arrow-b.svg) no-repeat top center /
+//         contain;
+//       color: white;
+//       top: 50%;
+//       right: 20px;
+//       transform: translateY(-50%);
+//       width: 8px;
+//       height: 11px;
+//     }
+//   }
+// }

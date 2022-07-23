@@ -1,0 +1,49 @@
+// ボタンリンク
+
+.another-page-link {
+  //ブレイクポイント設定なし
+
+  width: rem(200);
+  height: rem(60);
+  margin: rem(10) auto 0;
+  font-size: rem(14);
+  text-align: center;
+  line-height: rem(60);
+  color: #fff;
+  font-weight: $bold;
+  border-radius: 50px;
+  background: transparent linear-gradient(90deg, #7633a4 0%, #250d65 100%) 0% 0%
+    no-repeat padding-box;
+    position: relative;
+
+  &::after {
+    position: absolute;
+    content: "\f0da";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    top: 50%;
+    right: rem(30);
+    left: auto;
+    bottom: auto;
+    transform: translateY(-50%);
+    // top: 50%;
+    // transform: translateY(-50%);
+    color: #fff;
+    opacity: 1 ;
+  }
+  a {
+  }
+}
+
+//セクション全体の調整
+section {
+  padding: rem(20)  $padding-sp;
+  overflow: hidden;
+ 
+
+  @include mq("md") {
+    padding: 70px 0;
+    // width: 100%;
+    overflow: hidden;
+  }
+}
