@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <title>codeUps課題サイトです</title>
+  <!-- ファビコン -->
+  <link rel="”icon”" href="./assets/images/favicon.ico" />
+  <!-- swiper awesomeへのリンク  cdn-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script defer type="text/javascript" src="./assets/js/script.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const jokeEl = document.getElementById("joke");
+      const jokeBtn = document.getElementById("jokeBtn");
+      const Url = "https://icanhazdadjoke.com";
+
+      jokeBtn.addEventListener("click", generateJoke);
+
+      generateJoke();
+
+      async function generateJoke() {
+        const config = {
+          headers: {
+            Accept: "application/json",
+          },
+        };
+
+        const res = await fetch(Url, config);
+
+        const data = await res.json();
+
+        jokeEl.innerHTML = data.joke;
+      }
+    });
+  </script>
+  <style>
+    .joke-container {
+      position: absolute;
+      top: 5%;
+      background-color: rgb(252, 251, 231);
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(243, 234, 234, 0.1), 0 6px 6px rgba(238, 236, 236, 0.3);
+      padding: 50px 20px;
+      text-align: center;
+      max-width: 100%;
+      width: 800px;
+      left: 50%;
+      transform: translateX(-50%)
+    }
+
+    .joke {
+      font-size: 1.8rem;
+      color: rgb(20, 4, 19);
+      opacity: 0.8;
+      letter-spacing: 1px;
+      line-height: 40px;
+      margin: 30px auto;
+      max-width: 600px;
+    }
+
+    .btn {
+      border-radius: 8px;
+      border: none;
+      -moz-text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+      -webkit-text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+      -ms-text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+      color: rgb(242, 252, 241);
+      /* text-shadow: 3px 3px 15px rgba(0, 0, 0, 1.9); */
+      /* color: rgb(70, 15, 66); */
+      text-shadow: 1px 1px 3px rgba(0, 0, 0);
+      width: 150px;
+      /* margin: 0.8rem; */
+      padding: 0.8rem;
+      font-size: 1rem;
+      font-family: inherit;
+      cursor: pointer;
+      background: linear-gradient(30deg, #fcab39, #d1c219);
+      position: relative;
+      box-shadow: 0px -6px 36px 0px #fbeb36, 0px 0px 6px 0px #ffb347;
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .btn:focus {
+      outline: 0;
+    }
+
+    .btn:after {
+      content: '';
+      position: absolute;
+      top: -3px;
+      bottom: -3px;
+      left: -3px;
+      right: -3px;
+      border-radius: 50%;
+      filter: blur(10px);
+      background: linear-gradient(30deg, rgb(251 235 54 / 30%) 20%, rgb(255 255 255 / 50%));
+      z-index: 100;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    .btn:focus {
+      outline: none;
+    }
+
+    /* tablet */
+    @media(min-width:1000px) {
+      .container {
+        position: absolute;
+        top: 20%;
+      }
+
+      btn {
+        margin: 1rem;
+        padding: 1.5rem 3rem;
+        font-size: 1.5rem;
+        font-family: inherit;
+        cursor: pointer;
+      }
+    }
+
+    /* pc */
+    @media(min-width:1200px) {
+      body {
+        background: radial-gradient(circle, rgb(70, 15, 66) 13%, rgb(10, 10, 8) 100%);
+        height: 95vh;
+      }
+
+      .btn {
+        background: linear-gradient(30deg, rgb(70, 15, 66), #d13519);
+        color: rgba(238, 236, 236);
+        box-shadow: 0px -6px 36px 0px #fb7436, 0px 0px 6px 0px #ffb347;
+      }
+
+      .btn:after {
+        background: linear-gradient(30deg, rgb(238, 236, 236 / 30%) 20%, rgb(238, 236, 236 / 50%));
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div style="background: linear-gradient(0deg, #aacea0 0%, #c39fce 100%)">
+    <!-- ヘッダー（ロゴとメインビジュアル） -->
+    <header class="header">
+      <div class="header__inner">
+        <p class="header__logo">
+          <a href="index.html"><img src="./assets/images/logo.svg" alt="自動分析機能のアイコン" /></a>
+        </p>
+        <ul class="header__nav nav o-tablet">
+          <li class="nav__item"><a class="" href="animal.html">A.O.I</a></li>
+          <!-- <li class="nav__item"><a href="color.html">孫弘樹</a></li> -->
+          <li class="nav__item"><a href="flower.html">とりかい</a></li>
+          <li class="nav__item"><a href="food.html">ながたく</a></li>
+          <li class="nav__item"><a href="music.html">ピータン</a></li>
+          <li class="nav__item"><a href="movie.html">ふみ</a></li>
+          <li class="nav__item"><a href="sports.html">さるきち</a></li>
+          <li class="nav__item"><a href="book.html">だむごん</a></li>
+        </ul>
+      </div>
+
+      <!-- スマホのみ登場する、ドロワーメニュー（ハンバーガー的な三本ライン） -->
+
+      <div class="header-hamburger u-tablet">
+        <div class="header-hamburger__icons">
+          <div class="header-hamburger__icon1"></div>
+          <div class="header-hamburger__icon2"></div>
+          <div class="header-hamburger__icon3"></div>
+        </div>
+      </div>
+
+      <!--  header-hamburgerがクリックされた時に表示されるメニュー -->
+      <div class="hamburger">
+        <div class="hamburger__inner">
+          <div class="hamburger__items">
+            <!-- 表示時のコンテンツの中身 -->
+            <div class="hamburger__item"><a class="" href="animal.html">A.O.I</a></div>
+            <div class="hamburger__item"><a href="color.html">孫弘樹</a></div>
+            <div class="hamburger__item"><a href="flower.html">とりかい</a></div>
+            <div class="hamburger__item"><a href="food.html">ながたく</a></div>
+            <div class="hamburger__item"><a href="music.html">ピータン</a></div>
+            <div class="hamburger__item"><a href="movie.html">ふみ</a></div>
+            <div class="hamburger__item"><a href="sports.html">yoko</a></div>
+            <div class="hamburger__item"><a href="book.html">だむごん</a></div>
+          </div>
+        </div>
+      </div>
+      <!-- ドロワー用のヒーロー -->
+      <!-- <div class="hamburger__hero"></div> -->
+    </header>
+    <!-- ヘッダー（ロゴとメインビジュアル）終わり -->
+
+    <div class="news-mainvisual">
+      <div class="news-mainvisual__content">
+        <h1 class="news-mainvisual__title typo-bold">Sports</h1>
+      </div>
+      <!-- /.mainvisual__content -->
+    </div>
+    <!-- /.mainvisual -->
+
+    <!-- パンくずリスト  ulで作成し、インラインで横並びとする。-->
+    <div class="breadcrumb">
+      <ul class="breadcrumb__list breadcrumb-item">
+        <li><a class="breadcrumb-item__first" href="index.html">HOME </a></li>
+        <li><a class="breadcrumb-item__second" href="sports.html"> Sport</a></li>
+      </ul>
+    </div>
+
+    <!-- 最新情報 -->
+    <section id="news" class="section news newspage">
+      <div class="container news-container">
+        <div id="news-list" class="news-list newspage-list">
+          <div class="news-list__item sub-news news-page-list">
+            <time class="sub-news__time" datetime="2030-02-01">2030.02.01</time>
+            <a href="" class="sub-news__label">スポーツ</a>
+            <p class="sub-news__title">
+              <a href="#">Webデザインニュースサイト「ウェブマガジン」に取材いただきました</a>
+            </p>
+          </div>
+
+          <!--  news-list終わり -->
+
+        </div>
+        <!--  news-container終わり -->
+    </section>
+    <!--  news終わり -->
+
+
+    <!--  ダジャレの始まり -->
+    <section style="min-height: 50vh;">
+      <div style="position: relative; z-index: 2000;">
+        <div class="joke-container">
+          <div id="joke" class="joke" />
+        </div>
+        <button id="jokeBtn" class="btn">Next</button>
+      </div>
+    </section>
+    <!--  ダジャレの終わり -->
+
+
+    <!-- SERVICE -->
+
+    <section id="news-contact" class="contact">
+      <div class="contact__items">
+        <div class="contact__list">
+          <h2 class="section__title typo-bold contact__title">
+            <span>CONTACT</span>
+          </h2>
+          <p class="contact__text">
+            Webサイトの制作のご依頼やお見積りなど、<br class="u-tablet" />お気軽にご相談ください。
+          </p>
+          <!-- リンク用ボタン -->
+          <p class="another-page-link">
+            <a href="#" class="typo-bold">MORE</a>
+          </p>
+        </div>
+      </div>
+      <!-- contact__items 終わり -->
+    </section>
+    <!-- contact 終わり -->
+
+    <!-- トップへ戻るのリンクボタン  -->
+    <div class="footer__totop">
+      <a href="#"> <i class="fas fa-arrow-up" aria-hidden="true"></i> </a>
+    </div>
+
+    <!-- フッダーー（ロゴとメインビジュアル）-->
+    <footer class="footer news-footer">
+      <div class="footer__inner">
+        <ul class="footer__nav nav">
+          <!-- <li class="footer__nav__item"><a class="" href="#">HOME</a></li> -->
+          <li class="footer__nav__item"><a class="" href="#news">NEWS</a></li>
+          <li class="footer__nav__item"><a href="#service">SERVICE</a></li>
+          <li class="footer__nav__item"><a href="#works">WORKS</a></li>
+          <li class="footer__nav__item"><a href="#company">COMPANY</a></li>
+          <li class="footer__nav__item"><a href="#recruit">RECRUIT</a></li>
+          <li class="footer__nav__item"><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <p class="footer__copyright">© PON DESIGN</p>
+    </footer>
+
+    <!--フッダー（ロゴとメインビジュアル）終わり -->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- スライダープラグインのswiperへのリンク -->
+    <script src="https://kit.fontawesome.com/d9525ce099.js" crossorigin="anonymous"></script>
+    <!--font awesomeへのリンク -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.min.js"></script>
+</body>
+
+</html>
